@@ -1,0 +1,38 @@
+.list_pokemon {
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  width: 95%;
+}
+
+.title {
+  text-align: center;
+  color: lightblue;
+  font-weight: 600;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: rgb(43, 43, 228);
+  width: 80px;
+  border-radius: 7px;
+  color: #ffff;
+  height: 40px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(143, 168, 238);
+}
