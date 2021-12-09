@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { coloresTypes } from "../data";
 import "./card.css";
 
 const Card = ({ poke }) => {
@@ -23,7 +24,19 @@ const Card = ({ poke }) => {
       <img src={img} />
       <div className="types">
         {types.length > 0 &&
-          types.map((type) => <span key={type.slot}>{type.type.name}</span>)}
+          types.map((type) => (
+            <span
+              className="typesItem"
+              style={{
+                background: coloresTypes.find((elemento) => {
+                  return elemento.name.toLocaleLowerCase() === type.type.name;
+                }).color,
+              }}
+              key={type.slot}
+            >
+              {type.type.name}
+            </span>
+          ))}
       </div>
     </div>
   );

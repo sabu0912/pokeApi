@@ -4,6 +4,7 @@
   align-items: center;
   background: rgb(186, 216, 216);
   border-radius: 6px;
+  box-shadow: 3px 4px #ffff;
 }
 
 .card h1 {
@@ -12,10 +13,24 @@
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
   color: rgb(13, 13, 68);
+  text-shadow: 2px 2px #ffff;
+  font-weight: 800;
 }
 
 .types {
   display: flex;
   gap: 20px;
   color: rgb(13, 13, 68);
+}
+
+.typesItem {
+  width: 65px;
+  border-radius: 15px;
+  text-align: center;
+  color: #ffff;
+  height: 20px;
+  margin-bottom: 12px;
+  border: 2px solid #ffff;
+  box-shadow: 0 0 0 1.5px #000;
+  font-family: "Poppins", sans-serif;
 }
